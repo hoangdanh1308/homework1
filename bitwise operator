@@ -65,15 +65,15 @@ int main(int argc, char const *argv[])
 {
     uint8_t cart;
     
-    Add_cart(&cart, SHIRT|SHORT|RING);
+    addCart(&cart, SHIRT|SHORT|RING);
     
-    Show_cart(cart);
+    showCart(cart);
     
-    Delete_cart(&cart, SHIRT|RING);
+    removeItemsFromCart(&cart, SHIRT|RING);
 
-    Check_items(cart, SHIRT|RING|SHORT);
+    checkItems(cart, SHIRT|RING|SHORT);
  
-    Show_cart(cart);
+    showCart(cart);
 
     return 0;
 }
